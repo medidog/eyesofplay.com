@@ -97,7 +97,8 @@ section#titlechart #description ol {
 	list-style-position: outside;
 }
 #example-wrapper section#titlechart #description:after {
-	content: "⬇";
+	content: "▼";
+    color:#fff;
 	font-size: 40px;
 	display: block;
 }
@@ -990,6 +991,19 @@ a.viewsource:before {
     width:inherit;
     max-width:1280px;
 }
+#pin1 #myimg {
+    /*position: absolute;*/
+    left: -100px;
+    width:inherit;
+    max-width:1280px;
+}
+#pin2 #myimgtwo {
+    /*position: absolute;*/
+    left: -100px;
+    width:inherit;
+    max-width:1280px;
+}
+
 #bezier a.viewsource {
 	margin: 100px;
 	display: inline-block;
