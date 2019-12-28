@@ -1,8 +1,13 @@
 /*
 	General styles
 */
+@font-face {
+    font-family: UpheavalPro;
+    src: url(../../assets/fonts/Bonefish.ttf);
+}
+
 body {
-	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-family: "UpheavalPro", serif;
     background:url("../../image/background.png") repeat;
 	font-size: 13px;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -12,15 +17,27 @@ body, html {
 }
 
 h1, h2, h3, h4 {
-	font-family: "Josefin Slab", serif;
+	font-family: "UpheavalPro", serif;
 }
 h1 {
-	font-style: italic;
-	font-weight: bold;
-	font-size: 40px;
+    color: white;
+    font-size: 42px;
+    text-shadow: -3px 3px 0 #77477b,
+    3px 3px 0 #77477b,
+    3px -3px 0 #77477b,
+    0px 3px 0 #77477b,
+    3px 0px 0 #77477b,
+    -3px 0px 0 #77477b,
+    0px -3px 0 #77477b,
+    -3px -3px 0 #77477b;
 }
 h2 {
-	font-size: 20px;
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px -1px 0 #000;
+    -1px -1px 0 #000;
 }
 a, a:visited {
 	text-decoration: none;
@@ -69,4 +86,9 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
     height: 1%;
+}
+
+.image{
+    position:relative;
+    text-align:center;
 }

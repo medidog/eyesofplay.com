@@ -1,13 +1,10 @@
 body {
-	background-color: #3757d0;
-	background-image: -webkit-radial-gradient(#81bcff, #303391);
-	background-image: radial-gradient(#81bcff, #303391);
+    background-color: #56437e;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-size: 25px;
 	line-height: 31px;
-	color: rgb(73, 72, 100);
 }
 ::selection {
 	background: #ff455f;
@@ -34,12 +31,6 @@ li {
 	margin-bottom: 12px;
 	font-weight: 300;
 }
-#github-ribbon {
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 999999999;
-}
 #overlay {
 	position: fixed;
 	left: 0;
@@ -47,7 +38,7 @@ li {
 	width: 100%;
 	height: 100%;
 	display: block;
-	background: #fff;
+	background: #56437e;
 	opacity: 0;
 }
 iframe.twitter-follow-button {
@@ -82,9 +73,8 @@ section#start {
 }
 h1 {
 	font-style: normal;
-	font-size: 125px;
+	font-size: 45px;
 	color: #fff;
-	font-family: 'Roboto Condensed', sans-serif;
 }
 h1 span {
 	display: inline-block;
@@ -94,7 +84,6 @@ h3 {
 	font-style: normal;
 	color: #ff4468;
 	font-size: 35px;
-	font-family: 'Roboto Condensed', sans-serif;
 }
 h3 {
 	font-size: 30px;
@@ -135,7 +124,35 @@ h3 {
 	height: 17px;
 }
 .wand {
-	position: absolute;
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit:cover;
+}
+
+.wand2 {
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit:cover;
+}
+
+.wand3 {
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit:cover;
+}
+
+.wandbase {
+    position:absolute;
+    top:-330px;
+    left:0;
+    object-fit:cover;
+}
+.floor {
+    left:0;
+    object-fit:cover;
 }
 .sparkpoint {
 	position: absolute;
@@ -145,35 +162,26 @@ h3 {
 
 #intro {
 	display: block;
-	width: 650px;
-	height: 400px;
-	top: 45%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -60%);
-	-moz-transform: translate(-50%, -60%);
-	transform: translate(-50%, -60%);
+	width: 100%;
+	height: 100vh;
 	position: absolute;
+    overflow:hidden;
 }
 #intro h1 {
-	position: absolute;
 	text-align: center;
-	width: 100%;
-	top: 135px;
-	margin: 0;
 }
 #intro h1 span {
 	position: relative;
 }
 #intro .tophat {
-	position: absolute;
-	bottom: 110px;
-	left: 50%;
-	margin-left: -144px;
-	margin-bottom: 50px;
+	position: relative;
+	top: 220px;
+	width: 400px;
 }
 #intro .sparkpoint {
-	top: 60px;
-	left: 380px;
+    position:relative;
+    width: 50%;
+    left:50%;
 }
 
 #parallax {
@@ -448,72 +456,4 @@ html.touch #info #hatcontainer #speechbubble {
 }
 html.touch #info ul.nexttohat {
 	padding-left: 240px;
-}
-
-#carbonads {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
-		Helvetica, Arial, sans-serif;
-	margin: auto;
-}
-
-#carbonads {
-	display: flex;
-	max-width: 330px;
-	background-color: hsl(0, 0%, 98%);
-	box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
-}
-
-#carbonads a {
-	color: inherit;
-	text-decoration: none;
-}
-
-#carbonads a:hover {
-	color: inherit;
-}
-
-#carbonads span {
-	position: relative;
-	display: block;
-	overflow: hidden;
-}
-
-#carbonads .carbon-wrap {
-	display: flex;
-}
-
-.carbon-img {
-	display: block;
-	margin: 0;
-	line-height: 1;
-}
-
-.carbon-img img {
-	display: block;
-}
-
-.carbon-text {
-	font-size: 13px;
-	padding: 10px;
-	line-height: 1.5;
-	text-align: left;
-}
-
-.carbon-poweredby {
-	display: block;
-	padding: 8px 10px;
-	background: repeating-linear-gradient(
-			-45deg,
-			transparent,
-			transparent 5px,
-			hsla(0, 0%, 0%, 0.025) 5px,
-			hsla(0, 0%, 0%, 0.025) 10px
-		)
-		hsla(203, 11%, 95%, 0.4);
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	font-weight: 600;
-	font-size: 9px;
-	line-height: 1;
 }
