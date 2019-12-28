@@ -146,7 +146,7 @@ h3 {
 
 .wandbase {
     position:absolute;
-    top:-330px;
+    bottom:-90%;
     left:0;
     object-fit:cover;
 }
