@@ -183,6 +183,7 @@ img {
   image-rendering:-webkit-optimize-contrast;
   image-rendering:-moz-crisp-edges;
   image-rendering:pixelated;
+  object-position:bottom;
   
 }
 img.wand {
@@ -205,6 +206,7 @@ img.wand3 {
 img.wandbase {
     float: left;
     width: 100%;
+    height: 100vh;
 }
 /**
  * Correct overflow displayed oddly in IE 9.
