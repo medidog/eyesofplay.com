@@ -117,7 +117,7 @@
         <section id="start">
             <div id="intro">
                 <div class="image">
-                <img class="wand" src="image/chapter0_parallax5.png">
+                <img class="wandbase" src="image/chapter0_parallax5.png">
                 <img class="wand" src="image/chapter0_parallax4.png">
                 <img class="wand2" src="image/chapter0_parallax3.png">
                 <img class="wand3" src="image/chapter0_parallax2.png">
@@ -133,22 +133,22 @@
 
                 // animations
                 var nervousHat = new TimelineMax({repeat: -1, yoyo: true})
-                .add(TweenMax.staggerTo("#start h1 span", 0.5, {top: -1, x: -1, scale: 1.1, color: '#c0b8e5' }, 0.2))
-                .add(TweenMax.staggerTo("#start h1 span", 0.5, {top: 0, x: 0, scale: 1, color: '#fff'}, 0.2), 0.5);
+                .add(TweenMax.staggerTo("#start h1 span", 0.5, {top: -1, x: -1, scale: 1.1, color: '#fff' }, 0.2))
+                .add(TweenMax.staggerTo("#start h1 span", 0.5, {top: 0, x: 0, scale: 1, color: '#e3f1fb'}, 0.2), 0.5);
                 var abracadabra = new TimelineMax()
                     .add([
                           TweenMax.fromTo("#start .floor", 1, {autoAlpha: 0}, {autoAlpha: 1}),
                           TweenMax.fromTo("#start h1", 1, {autoAlpha: 0}, {autoAlpha: 1}),
                           TweenMax.fromTo("#start .wand", 1, {top:0}, {top: -$(window).height()/8}),
                           TweenMax.fromTo("#start .wand2", 1, {top:0}, {top: -$(window).height()/35}),
-                          TweenMax.fromTo("#start .wand3", 1, {top:0}, {top: -$(window).height()/36})
+                          TweenMax.fromTo("#start .wand3", 1, {top:0}, {top: -$(window).height()/37})
                         ]);
                 var abracadabra = new TimelineMax()
                 var reveal = new TimelineMax()
                     .add([
 
                             TweenMax.from("#start h1", 1, {scale: 1, top: "+=0"}),
-                            TweenMax.to("#start .wand", 0.8, {top: -$(window).height()/5}),
+                            TweenMax.to("#start .wand", 0.8, {top: -$(window).height()/3}),
                             TweenMax.to("#start .wand2", 0.8, {top: -$(window).height()/17}),
                             TweenMax.to("#start .wand3", 0.8, {top: -$(window).height()/18})
                           
@@ -214,7 +214,7 @@
                 // jumping text
                 new ScrollMagic.Scene({
                         duration: 200,
-                        offset: 450
+                        offset: 100
                     })
                     .setTween(laola)
                     .addTo(controller);

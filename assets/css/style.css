@@ -20,24 +20,23 @@ h1, h2, h3, h4 {
 	font-family: "UpheavalPro", serif;
 }
 h1 {
-    color: white;
-    font-size: 42px;
+    letter-spacing: 1px;
     text-shadow: -3px 3px 0 #77477b,
     3px 3px 0 #77477b,
     3px -3px 0 #77477b,
-    0px 3px 0 #77477b,
-    3px 0px 0 #77477b,
     -3px 0px 0 #77477b,
+    3px 0px 0 #77477b,
     0px -3px 0 #77477b,
+    0px 3px 0 #77477b,
     -3px -3px 0 #77477b;
 }
 h2 {
     color: white;
     font-size: 20px;
-    text-shadow: -1px 1px 0 #000,
-    1px 1px 0 #000,
-    1px -1px 0 #000;
-    -1px -1px 0 #000;
+    text-shadow: -3px 3px 0 #000,
+    3px 3px 0 #000,
+    3px -3px 0 #000;
+    -3px -3px 0 #000;
 }
 a, a:visited {
 	text-decoration: none;
