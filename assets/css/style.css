@@ -21,14 +21,14 @@ h1, h2, h3, h4 {
 }
 h1 {
     letter-spacing: 1px;
-    text-shadow: -3px 3px 0 #77477b,
-    3px 3px 0 #77477b,
-    3px -3px 0 #77477b,
-    -3px 0px 0 #77477b,
-    3px 0px 0 #77477b,
-    0px -3px 0 #77477b,
-    0px 3px 0 #77477b,
-    -3px -3px 0 #77477b;
+    text-shadow: -2px 2px 0 #77477b,
+    2px 2px 0 #77477b,
+    2px -2px 0 #77477b,
+    -2px 0px 0 #77477b,
+    2px 0px 0 #77477b,
+    0px -2px 0 #77477b,
+    0px 2px 0 #77477b,
+    -2px -2px 0 #77477b;
 }
 h2 {
     color: white;

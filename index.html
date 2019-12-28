@@ -133,8 +133,8 @@
 
                 // animations
                 var nervousHat = new TimelineMax({repeat: -1, yoyo: true})
-                .add(TweenMax.staggerTo("#start h1 span", 0.5, {top: -1, x: -1, scale: 1.1, color: '#fff' }, 0.2))
-                .add(TweenMax.staggerTo("#start h1 span", 0.5, {top: 0, x: 0, scale: 1, color: '#e3f1fb'}, 0.2), 0.5);
+                .add(TweenMax.staggerTo("#start h1 span", 1, {top: -1, x: -1, scale: 1.1, color: '#e3f1fb' }, 0.2))
+                .add(TweenMax.staggerTo("#start h1 span", 1, {top: 0, x: 0, scale: 1, color: '#fff'}, 0.2), 0.5);
                 var abracadabra = new TimelineMax()
                     .add([
                           TweenMax.fromTo("#start .floor", 1, {autoAlpha: 0}, {autoAlpha: 1}),
@@ -213,7 +213,7 @@
 
                 // jumping text
                 new ScrollMagic.Scene({
-                        duration: 200,
+                        duration: 500,
                         offset: 100
                     })
                     .setTween(laola)
