@@ -233,42 +233,6 @@
             <script>
                 $(function () { // wait for document ready
                   // build scene
-                  var images = [
-                                "assets/image/Areyouok_1.png",
-                                "assets/image/Areyouok_2.png",
-                                "assets/image/Areyouok_3.png",
-                                "assets/image/Areyouok_4.png",
-                                "assets/image/Areyouok_5.png",
-                                "assets/image/Areyouok_6.png",
-                                "assets/image/Areyouok_7.png",
-                                "assets/image/Areyouok_8.png",
-                                "assets/image/Areyouok_9.png",
-                                "assets/image/Areyouok_10.png",
-                                "assets/image/Areyouok_11.png",
-                                "assets/image/Areyouok_12.png",
-                                "assets/image/Areyouok_13.png",
-                                "assets/image/Areyouok_14.png",
-                                "assets/image/Areyouok_15.png",
-                                "assets/image/Areyouok_16.png",
-                                "assets/image/Areyouok_17.png",
-                                "assets/image/Areyouok_18.png",
-                                "assets/image/Areyouok_19.png",
-                                "assets/image/Areyouok_20.png",
-                                "assets/image/Areyouok_21.png",
-                                "assets/image/Areyouok_22.png",
-                                "assets/image/Areyouok_23.png",
-                                "assets/image/Areyouok_24.png",
-                                "assets/image/Areyouok_25.png",
-                                "assets/image/Areyouok_26.png",
-                                "assets/image/Areyouok_27.png",
-                                "assets/image/Areyouok_28.png",
-                                "assets/image/Areyouok_29.png",
-                                "assets/image/Areyouok_30.png",
-                                "assets/image/Areyouok_31.png",
-                                "assets/image/Areyouok_32.png",
-                                "assets/image/Areyouok_33.png",
-                                "assets/image/Areyouok_34.png"
-                                ];
                   var obj = {curImg: 0};
                   var tween = TweenMax.to(obj, 1,
                                           {
@@ -301,41 +265,54 @@
                 $(function () { // wait for document ready
                   // build scene
                   var images = [
-                                "assets/image/Areyouok_1.png",
-                                "assets/image/Areyouok_2.png",
-                                "assets/image/Areyouok_3.png",
-                                "assets/image/Areyouok_4.png",
-                                "assets/image/Areyouok_5.png",
-                                "assets/image/Areyouok_6.png",
-                                "assets/image/Areyouok_7.png",
-                                "assets/image/Areyouok_8.png",
-                                "assets/image/Areyouok_9.png",
-                                "assets/image/Areyouok_10.png",
-                                "assets/image/Areyouok_11.png",
-                                "assets/image/Areyouok_12.png",
-                                "assets/image/Areyouok_13.png",
-                                "assets/image/Areyouok_14.png",
-                                "assets/image/Areyouok_15.png",
-                                "assets/image/Areyouok_16.png",
-                                "assets/image/Areyouok_17.png",
-                                "assets/image/Areyouok_18.png",
-                                "assets/image/Areyouok_19.png",
-                                "assets/image/Areyouok_20.png",
-                                "assets/image/Areyouok_21.png",
-                                "assets/image/Areyouok_22.png",
-                                "assets/image/Areyouok_23.png",
-                                "assets/image/Areyouok_24.png",
-                                "assets/image/Areyouok_25.png",
-                                "assets/image/Areyouok_26.png",
-                                "assets/image/Areyouok_27.png",
-                                "assets/image/Areyouok_28.png",
-                                "assets/image/Areyouok_29.png",
-                                "assets/image/Areyouok_30.png",
-                                "assets/image/Areyouok_31.png",
-                                "assets/image/Areyouok_32.png",
-                                "assets/image/Areyouok_33.png",
-                                "assets/image/Areyouok_34.png"
+                                "assets/image/Barashi_1.png",
+                                "assets/image/Barashi_2.png",
+                                "assets/image/Barashi_3.png",
+                                "assets/image/Barashi_4.png",
+                                "assets/image/Barashi_5.png",
+                                "assets/image/Barashi_6.png",
+                                "assets/image/Barashi_7.png",
+                                "assets/image/Barashi_8.png",
+                                "assets/image/Barashi_9.png",
+                                "assets/image/Barashi_10.png",
+                                "assets/image/Barashi_11.png",
+                                "assets/image/Barashi_12.png",
+                                "assets/image/Barashi_13.png",
+                                "assets/image/Barashi_14.png",
+                                "assets/image/Barashi_15.png"
                                 ];
+                  var obj = {curImg: 0};
+                  var tween = TweenMax.to(obj, 2.4,
+                                          {
+                                          curImg: images.length - 1,    // animate propery curImg to number of images
+                                          roundProps: "curImg",                // only integers so it can be used as an array index
+                                          repeat: -1,                                    // repeat 3 times
+                                          immediateRender: true,            // load first image automatically
+                                          ease: Linear.easeNone,            // show every image the same ammount of time
+                                          onUpdate: function () {
+                                          $("#myimgtwo").attr("src", images[obj.curImg]); // set the image source
+                                          }
+                                          }
+                                          );
+                  var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 900, offset: -150})
+                  .setPin("#pin2")
+                  .setTween(tween)
+                  //.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+                  .addTo(controller);
+                  });
+                </script>
+        </section>
+        <section class="demo">
+            <div class="spacer s2"></div>
+            <div class="spacer s2"></div>
+            <div id="trigger1" class="spacer s0"></div>
+            <div id="pin1">
+                <img id="myimg"/><br>
+            </div>
+            <div class="spacer s2"></div>
+            <script>
+                $(function () { // wait for document ready
+                  // build scene
                   var obj = {curImg: 0};
                   var tween = TweenMax.to(obj, 1,
                                           {
@@ -345,14 +322,14 @@
                                           immediateRender: true,            // load first image automatically
                                           ease: Linear.easeNone,            // show every image the same ammount of time
                                           onUpdate: function () {
-                                          $("#myimgtwo").attr("src", images[obj.curImg]); // set the image source
+                                          $("#myimg").attr("src", images[obj.curImg]); // set the image source
                                           }
                                           }
                                           );
-                  var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 300, offset: -300})
-                  .setPin("#pin2")
+                  var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 300, offset: -100})
+                  .setPin("#pin1")
                   .setTween(tween)
-                  //.addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+                  //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
                   .addTo(controller);
                   });
                 </script>
