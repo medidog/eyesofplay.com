@@ -1,10 +1,10 @@
 body {
-    background-color: #56437e;
+	background-color: #e3f2fb;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	line-height: 2vh;
-    overflow-x:hidden;
+	overflow-x: hidden;
 }
 ::selection {
 }
@@ -80,10 +80,26 @@ h3 {
 	font-size: 35px;
 }
 h3 {
-	font-size: 30px;
-	margin-top: 80px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif!important;
+    font-size: 18px!important;
+    line-height:2;
+    width: 80%;
+    transform: translate(12%, 18vh);
+    color:white;
+    position:relative;
 }
-
+h4 {
+	font-size: 40px;
+	width: 80%;
+	transform: translate(12%, 0%);
+}
+h5 {
+	font-style: normal;
+	font-size: 20px !important;
+	margin-top: 80px;
+	line-height: 2;
+	width: 80%;
+}
 .spark {
 	position: absolute;
 }
@@ -149,6 +165,7 @@ h3 {
 }
 .sparkpoint {
 	position: absolute;
+    width:100%;
 }
 
 /*START*/
@@ -165,16 +182,19 @@ h3 {
 #intro h1 span {
 	position: relative;
 }
-#intro .tophat {
-	position: relative;
-	height: 40vh;
-    top: 13vh;
-    max-width:100%;
+img.tophat {
+    padding-top:100px;
+	float: left;
+	width: 100%;
+	min-height: 100vh;
 }
+	.tophat {
+		position: absolute;
+		left: 0;
+		object-fit:cover;
+	}
 #intro .sparkpoint {
     position:relative;
-    width: 50%;
-    left:50%;
 }
 
 #parallax {

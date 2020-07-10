@@ -40,10 +40,9 @@
     <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
     <script src="assets/js/demo.js"></script>
     <style>
-        @import url("https://fonts.googleapis.com/css?family=Roboto:900");
 
         a {
-            font-family: "Roboto", sans-serif;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
             font-weight: 900;
             color: black;
             text-decoration: none;
@@ -69,12 +68,21 @@
             top: 50%;
             transform: translate(-50%, -50%);
         }
+        .centered2 {
+            background: #a373ac!important;
+            color:white!important;
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%, -50%);
+        }
 
         .h-button {
             background: white;
             padding: 20px 5px;
             width: 20%;
             text-align: center;
+            transform: translate(-50%,200%);
         }
 
             .h-button span {
@@ -134,7 +142,7 @@
 
     </style>
 </head>
-<body>
+<body onresize="refresh()">
 
     <div id="content-wrapper">
         <span id="overlay"></span>
@@ -212,11 +220,12 @@
                     <img class="wand2" src="image/chapter0_parallax3.png">
                     <img class="wand3" src="image/chapter0_parallax2.png">
                     <img class="wandbase" src="image/chapter0_parallax1.png">
-                    <img class="tophat floor">
-
+                    <img class="tophat floor" src="image/chapter0_parallax.png">
 
                 </div>
-                <div class="sparkpoint"></div>
+
+                <div class="sparkpoint"> <h1></h1>
+</div>
 
             </div>
 
@@ -310,10 +319,10 @@
                 })
                     .setTween(laola)
                     .addTo(controller);</script>
-            <h1>EyesofPlay</h1>
         </section>
-        <section>
-            <a aria-label='WEBTOON' class='h-button right' data-text='SUBSCRIBE' href='https://www.webtoons.com/en/challenge/eyes-of-play/list?title_no=469928'>
+        <section class="demo">
+            <div class="spacer s2"> </div>
+            <a aria-label='WEBTOON' class='h-button left' data-text='SUBSCRIBE' href='https://www.webtoons.com/en/challenge/eyes-of-play/list?title_no=469928'>
                 <span>W</span>
                 <span>E</span>
                 <span>B</span>
@@ -322,7 +331,7 @@
                 <span>O</span>
                 <span>N</span>
             </a>
-            <a aria-label='CHAPTER 1' class='h-button left' data-text='ENGLISH' href='https://www.webtoons.com/en/challenge/eyes-of-play/the-anime-club/viewer?title_no=469928&episode_no=1'>
+            <a aria-label='CHAPTER 1' class='h-button centered' data-text='ENGLISH' href='https://www.webtoons.com/en/challenge/eyes-of-play/the-anime-club/viewer?title_no=469928&episode_no=1'>
                 <span>C</span>
                 <span>H</span>
                 <span>A</span>
@@ -333,26 +342,38 @@
                 <span></span>
                 <span>1</span>
             </a>
-            <a aria-label='PEK YAKINDA' class='h-button centered' data-text='TÜRKÇE' href='#'>
-                <span>B</span>
-                <span>Ö</span>
-                <span>L</span>
-                <span>Ü</span>
-                <span>M</span>
-                <span></span>
-                <span>1</span>
+            <a aria-label='YAKINDA' class='h-button right' data-text='TÜRKÇE' href='./tur/chapter1.html'>
+                <span>Y</span>
+                <span>A</span>
+                <span>K</span>
+                <span>I</span>
+                <span>N</span>
+                <span>D</span>
+                <span>A</span>
             </a>
+            <a aria-label='PATREON' class='h-button centered2' data-text='BECOME A PATRON' href='https://www.patreon.com/bePatron?utm_source=webtoons&utm_medium=link&utm_campaign=medidog&u=3636447&redirect_uri=http%3A%2F%2Fm.webtoons.com%2Fchallenge%2FpatreonCallback'>
+                <span>P</span>
+                <span>A</span>
+                <span>T</span>
+                <span>R</span>
+                <span>E</span>
+                <span>O</span>
+                <span>N</span>
+            </a>
+            <div style="position:relative; color:white; text-align:center">
+                <h3>
+                    Barashi and Iburu are childhood friends and they happen to go to the same high school along with their four friends, Tsume, Ayame, Wabi, and Yutaru. They founded the anime club in their school, due to their shared passion for anime and manga. They love living their lives as if they were anime characters. But something beyond their wildest imaginations is headed their way, which will make their lives even more of an anime.
+                </h3>
+            </div>
 
 
-        </section>
-        <section class="demo">
-            <div class="spacer s2"></div>
-            <div class="spacer s2"></div>
+            <div class="spacer s2">
+
+            </div>
             <div id="trigger1" class="spacer s0"></div>
             <div id="pin1">
                 <img id="myimg" /><br>
             </div>
-            <div class="spacer s2"></div>
             <script>$(function () { // wait for document ready
                     // build scene
                     var obj = { curImg: 0 };
@@ -374,15 +395,14 @@
                         //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
                         .addTo(controller);
                 });</script>
+
         </section>
 
         <section class="demo">
-            <div class="spacer s2"></div>
             <div id="trigger2" class="spacer s2"></div>
             <div id="pin2">
                 <img id="myimgtwo" /><br>
-            </div>
-            <div class="spacer s2"></div>
+</div>
             <script>$(function () { // wait for document ready
                     // build scene
                     var images = [
@@ -423,8 +443,6 @@
                 });</script>
         </section>
         <section class="demo">
-            <div class="spacer s2"></div>
-            <div class="spacer s2"></div>
             <div id="trigger1" class="spacer s0"></div>
             <div id="pin1">
                 <img id="myimg" /><br>

@@ -1151,10 +1151,11 @@ a.viewsource:before {
     max-width:1280px;
 }
 #pin2 #myimgtwo {
-    /*position: absolute;*/
+	/*position: absolute;*/
+	border: 3px solid white;
     left: -100px;
-    width:inherit;
-    max-width:1280px;
+	width: inherit;
+	max-width: 1280px;
 }
 
 #bezier a.viewsource {

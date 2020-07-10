@@ -1,8 +1,0 @@
-[Bc.BMP07_A]
-
-ＤＬありがとうございます。
-このビットマップフォントの最適フォントサイズは
-7,14,21,28…（7の倍数）pxです。
-
-BRIDGEco.
-http://home9.highway.ne.jp/BRIDGEco/index/
